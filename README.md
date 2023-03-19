@@ -33,7 +33,7 @@ file lifetime scope after which it will be removed.
 
 ### Getting Started
 
-1. Install temporary resources library locally and add it as dependency. Latest version is 1.0.RELEASE.
+1. Add temporary resources library to your project as dependency. Latest version is *1.0.RELEASE*.
 
 Maven:
 ```xml
