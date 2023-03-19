@@ -33,8 +33,9 @@ file lifetime scope after which it will be removed.
 
 ### Getting Started
 
-1. Install temporary resources library locally and add it as dependency. Current version is 1.0.RELEASE.
+1. Install temporary resources library locally and add it as dependency. Latest version is 1.0.RELEASE.
 
+Maven:
 ```xml
 <dependency>
     <groupId>io.github.mrsaraira</groupId>
@@ -42,6 +43,12 @@ file lifetime scope after which it will be removed.
     <version>1.0.RELEASE</version>
 </dependency>
 ```
+
+Gradle:
+```
+implementation 'io.github.mrsaraira:temporary-resources:1.0.RELEASE'
+```
+
 2. By default, the library is **enabled**, but it checks for Sping Web dependency to ensure that the context has additional
 registered scopes: (session, request) for the library to work properly.
 To enable/disable library auto-configuration you have to set property `temporary-resources.enabled` in your application
