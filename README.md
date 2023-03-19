@@ -51,9 +51,8 @@ implementation 'io.github.mrsaraira:temporary-resources:1.1.0'
 
 2. By default, the library is **enabled**, but it checks for Sping Web dependency to ensure that the context has additional
 registered scopes: (session, request) for the library to work properly.
-To enable/disable library auto-configuration you have to set property `temporary-resources.enabled` in your application
-settings.<br>
-To enable/disable Temporary files cleaner service set property: `temporary-files-cleaner-service-enabled`.
+To set library auto-configuration enabled set property `temporary-resources.enabled` in your application
+settings. Example:
 
 ```yaml
 temporary-resources:

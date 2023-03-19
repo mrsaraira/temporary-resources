@@ -15,11 +15,11 @@ public class TemporaryResourcesProperties {
     /**
      * Set Temporary resources library configuration enabled
      */
-    private Boolean enabled;
+    private Boolean enabled = true;
 
     /**
      * Set Temporary files cleaner service enabled
      */
-    private Boolean temporaryFilesCleanerServiceEnabled;
+    private Boolean temporaryFilesCleanerServiceEnabled = true;
 
 }
