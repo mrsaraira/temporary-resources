@@ -11,7 +11,7 @@ A brief review of main features provided by the temporary resources library:
 + Providing many scopes to register Temporary resources.
 + It is auto-configurable Spring Boot library – you don’t have to do anything more than including it as a dependency to
 your application to make it work.
-+ You can build on this library by creating your own Temporary resource implementation
++ You can build on this library by creating your own Temporary resource implementation in your project.
 
 
 ### Temporary resource lifetime scopes:
