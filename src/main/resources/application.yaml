@@ -1,3 +1,0 @@
-temporary-resources:
-  enabled: true
-  temporary-files-cleaner-service-enabled: true
