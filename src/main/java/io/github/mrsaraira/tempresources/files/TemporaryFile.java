@@ -1,4 +1,4 @@
-package io.github.mrsaraira.tempresources.file;
+package io.github.mrsaraira.tempresources.files;
 
 import io.github.mrsaraira.tempresources.TemporaryResource;
 import io.github.mrsaraira.tempresources.TemporaryResourceLifetimeScope;

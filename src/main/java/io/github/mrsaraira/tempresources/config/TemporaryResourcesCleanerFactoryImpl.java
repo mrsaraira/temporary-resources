@@ -15,7 +15,7 @@ import static io.github.mrsaraira.tempresources.config.TemporaryResourcesCleaner
 import static io.github.mrsaraira.tempresources.config.TemporaryResourcesCleanerConfiguration.SESSION_TEMPORARY_RESOURCES_CLEANER_PROVIDER;
 
 /**
- * Temporary resources cleaner factory implementation to create Spring-managed temporary resources cleaners by pre-defined scope.
+ * Temporary resources cleaner factory implementation to create Spring-managed temporary resources cleaners with pre-defined scope.
  *
  * @author Takhsin Saraira
  * @see TemporaryResourcesCleaner

@@ -1,4 +1,4 @@
-package io.github.mrsaraira.tempresources.file;
+package io.github.mrsaraira.tempresources.files;
 
 import io.github.mrsaraira.tempresources.TemporaryResourceLifetimeScope;
 import io.github.mrsaraira.tempresources.TemporaryResourcesCleanerFactory;
@@ -38,6 +38,7 @@ public class TemporaryFilesCleanerServiceTest {
             final File tempFile = createTempFile(RandomStringUtils.randomAlphanumeric(6));
             TemporaryFile temporaryFile = temporaryFilesCleanerService.register(tempFile, scope);
             Assertions.assertEquals(scope, temporaryFile.getScope());
+            Assertions.assertEquals(temporaryFile.getResource(), tempFile);
             context.getAutowireCapableBeanFactory().destroyBean(temporaryResourcesCleanerFactory.getTemporaryResourcesCleaner(scope));
             Assertions.assertFalse(tempFile.exists());
         }
@@ -50,6 +51,7 @@ public class TemporaryFilesCleanerServiceTest {
         final File tempFile = createTempFile(RandomStringUtils.randomAlphanumeric(6));
         TemporaryFile temporaryFile = temporaryFilesCleanerService.register(tempFile);
         Assertions.assertEquals(defaultScope, temporaryFile.getScope());
+        Assertions.assertEquals(tempFile, temporaryFile.getResource());
         context.getAutowireCapableBeanFactory().destroyBean(temporaryResourcesCleanerFactory.getTemporaryResourcesCleaner(defaultScope));
         Assertions.assertFalse(tempFile.exists());
     }

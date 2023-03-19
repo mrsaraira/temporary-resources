@@ -4,7 +4,7 @@ import javax.validation.constraints.NotNull;
 
 /**
  * Abstract service defining all needed methods for implementations to work with temporary resources i.e.
- * registering temporary resources with pre-defined scope and getting {@link TemporaryResourcesCleaner}
+ * registering temporary resources with pre-defined scope and creating {@link TemporaryResourcesCleaner}
  * <br><br>
  *
  * @param <T> encapsulated resource type

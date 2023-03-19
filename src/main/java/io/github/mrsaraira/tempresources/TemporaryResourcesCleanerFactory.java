@@ -11,6 +11,12 @@ import javax.validation.constraints.NotNull;
  */
 public interface TemporaryResourcesCleanerFactory {
 
+    /**
+     * Create temporary resources cleaner with pre-defined scope.
+     *
+     * @param scope temporary resource lifetime scope
+     * @return temporary resources cleaner
+     */
     TemporaryResourcesCleaner getTemporaryResourcesCleaner(@NotNull TemporaryResourceLifetimeScope scope);
 
 }
